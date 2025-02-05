@@ -1,40 +1,90 @@
 ---
-import "../styles/global.css";
+import '../styles/global.css';
+import Card from '../components/Card.astro';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <!-- displays site properly based on user's device -->
 
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
+      rel='icon'
+      type='image/png'
+      sizes='32x32'
+      href='./images/favicon-32x32.png'
+    />
+
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'
+      rel='stylesheet'
     />
 
     <title>Frontend Mentor | Four card feature section</title>
   </head>
-  <body>
-    Reliable, efficient delivery Powered by Technology Our Artificial
-    Intelligence powered tools use millions of project data points to ensure
-    that your project is successful Supervisor Monitors activity to identify
-    project roadblocks Team Builder Scans our talent network to create the
-    optimal team for your project Karma Regularly evaluates our talent to ensure
-    quality Calculator Uses data from past projects to provide better delivery
-    estimates
+  <body
+    class='min-h-screen bg-very-light-gray pb-4 font-poppins text-[.9375rem] font-normal text-very-dark-blue'
+  >
+    <header class='mt-[5.3125rem] px-8 text-center'>
+      <h1 class='text-2xl font-extralight tracking-[.0106rem]'>
+        Reliable, efficient delivery <br />
+        <span class='font-semibold'>Powered by Technology</span>
+      </h1>
+      <p class='mt-4 leading-6 opacity-50'>
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+    </header>
+    <main class='flex flex-col px-8'>
+      <div class='mt-[4.75rem] flex flex-col items-center gap-6'>
+        <Card
+          title='Supervisor'
+          description='Monitors activity to identify project roadblocks'
+          imgUrl='/images/icon-supervisor.svg'
+          imgAlt='Supervisor icon'
+          color='cyan'
+        />
+        <Card
+          title='Team Builder'
+          description='Scans our talent network to create the optimal team for your project'
+          imgUrl='/images/icon-team-builder.svg'
+          imgAlt='Team Builder icon'
+          color='red'
+        />
+        <Card
+          title='Karma'
+          description='Regularly evaluates our talent to ensure quality'
+          imgUrl='/images/icon-karma.svg'
+          imgAlt='Karma icon'
+          color='orange'
+        />
+        <Card
+          title='Calculator'
+          description='Uses data from past projects to provide better delivery estimates'
+          imgUrl='/images/icon-calculator.svg'
+          imgAlt='Calculator icon'
+          color='blue'
+        />
+      </div>
+    </main>
 
     <footer>
-      <p class="attribution">
+      <p class='mt-6 text-center text-xs'>
         Challenge by <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
+          class='text-blue underline'
+          href='https://www.frontendmentor.io?ref=challenge'
+          target='_blank'
         >
           Frontend Mentor
-        </a>. Coded by <a href="#">Your Name Here</a>.
+        </a>. Coded by <a
+          class='text-blue underline'
+          href='https://www.frontendmentor.io/profile/AnonymousCoder323'
+          >Anonymous Coder</a
+        >.
       </p>
     </footer>
   </body>

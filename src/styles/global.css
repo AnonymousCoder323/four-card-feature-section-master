@@ -1,4 +1,38 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+/* - Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%) */
+
+@theme {
+  --color-red: #ea5353;
+  --color-cyan: #45d3d3;
+  --color-orange: #fcaf4a;
+  --color-blue: #549ef2;
+  --color-very-dark-blue: #4D4F62;
+  --color-grayish-blue: #a3a6d2;
+  --color-very-light-gray: #fafafa;
+  --font-poppins: 'Poppins', 'sans-serif';
+  --box-shadow: 0 15px 30px -11px rgba(163, 166, 210, 0.50);
+}
+
+:root {
+  --color-red: #ea5353;
+  --color-cyan: #45d3d3;
+  --color-orange: #fcaf4a;
+  --color-blue: #549ef2;
+  --color-very-dark-blue: #4D4F62;
+  --color-grayish-blue: rgb(163, 166, 210);
+  --color-very-light-gray: #fafafa;
+  --font-poppins: 'Poppins', 'sans-serif';
+}
 
 .attribution {
   font-size: 11px;
