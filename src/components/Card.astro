@@ -5,6 +5,7 @@ interface Props {
   imgUrl: string;
   imgAlt: string;
   color: 'cyan' | 'red' | 'orange' | 'blue';
+  class?: string;
 }
 
 const colors = {
@@ -14,10 +15,19 @@ const colors = {
   blue: 'bg-blue',
 };
 
-const { title, description, imgUrl, imgAlt, color } = Astro.props;
+const {
+  title,
+  description,
+  imgUrl,
+  imgAlt,
+  color,
+  class: cssClass,
+} = Astro.props;
 ---
 
-<div class='max-w-[21.875rem] overflow-hidden rounded-lg shadow-(--box-shadow)'>
+<div
+  class={`max-w-[21.875rem] overflow-hidden rounded-lg shadow-(--box-shadow) ${cssClass}`}
+>
   <hr class=`h-[.2219rem] border-none ${colors[color]}` />
   <div class='p-7'>
     <h2 class='text-xl font-semibold'>{title}</h2>

@@ -39,9 +39,12 @@ import Card from '../components/Card.astro';
         points to ensure that your project is successful
       </p>
     </header>
-    <main class='flex flex-col px-8'>
-      <div class='mt-[4.75rem] flex flex-col items-center gap-6'>
+    <main class='px-8'>
+      <div
+        class='mt-[4.75rem] flex flex-col items-center gap-6 md:grid md:grid-cols-[repeat(2,_minmax(0,_21.875rem))] md:place-content-center md:place-items-center lg:grid-flow-col lg:grid-cols-[repeat(3,_minmax(0,_21.875rem))] lg:grid-rows-2 lg:place-content-center lg:gap-[1.875rem]'
+      >
         <Card
+          class='lg:row-start-1 lg:row-end-3 lg:self-center'
           title='Supervisor'
           description='Monitors activity to identify project roadblocks'
           imgUrl='/images/icon-supervisor.svg'
@@ -63,6 +66,7 @@ import Card from '../components/Card.astro';
           color='orange'
         />
         <Card
+          class='lg:row-start-1 lg:row-end-3 lg:self-center'
           title='Calculator'
           description='Uses data from past projects to provide better delivery estimates'
           imgUrl='/images/icon-calculator.svg'
