@@ -21,7 +21,7 @@
   --color-very-light-gray: #fafafa;
   --font-poppins: 'Poppins', 'sans-serif';
   --box-shadow: 0 15px 30px -11px rgba(163, 166, 210, 0.50);
-  --text-heading: clamp(1.5rem, 0.891rem + 3.043vw, 3.25rem);
+  --text-heading: clamp(1.5rem, 1.239rem + 1.304vw, 2.25rem);
 }
 
 :root {
