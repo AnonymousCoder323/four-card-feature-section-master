@@ -29,11 +29,13 @@ const {
   class={`max-w-[21.875rem] overflow-hidden rounded-lg shadow-(--box-shadow) ${cssClass}`}
 >
   <hr class=`h-[.2219rem] border-none ${colors[color]}` />
-  <div class='p-7'>
+  <div class='p-7 md:p-8'>
     <h2 class='text-xl font-semibold'>{title}</h2>
-    <p class='text-[.8125rem] leading-[1.77] opacity-50'>{description}</p>
+    <p class='text-[.8125rem] leading-[1.77] opacity-50 md:mt-1.5'>
+      {description}
+    </p>
     <img
-      class='ms-auto mt-8'
+      class='ms-auto mt-8 md:mt-10 md:w-16'
       src={imgUrl}
       alt={imgAlt}
       width='57'
